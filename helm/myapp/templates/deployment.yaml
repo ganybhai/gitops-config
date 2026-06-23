@@ -26,3 +26,7 @@ spec:
               value: {{ .Values.image.tag }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
+      imagePullSecrets:
+        {{- range .Values.imagePullSecrets }}
+        - name: {{ .name }}
+        {{- end }}
