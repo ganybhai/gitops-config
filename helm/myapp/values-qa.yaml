@@ -1,0 +1,5 @@
+env: qa
+replicaCount: 1
+image:
+  repository: 861027663622.dkr.ecr.ap-south-1.amazonaws.com/gitops-platform/qa/myapp
+  tag: latest

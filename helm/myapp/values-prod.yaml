@@ -1,0 +1,5 @@
+env: prod
+replicaCount: 3
+image:
+  repository: 861027663622.dkr.ecr.ap-south-1.amazonaws.com/gitops-platform/prod/myapp
+  tag: latest
