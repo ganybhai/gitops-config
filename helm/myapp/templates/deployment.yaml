@@ -13,6 +13,8 @@ spec:
       labels:
         app: {{ .Release.Name }}
     spec:
+      imagePullSecrets:
+        - name: ecr-secret
       containers:
         - name: myapp
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
@@ -26,7 +28,3 @@ spec:
               value: {{ .Values.image.tag }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
-      imagePullSecrets:
-        {{- range .Values.imagePullSecrets }}
-        - name: {{ .name }}
-        {{- end }}
