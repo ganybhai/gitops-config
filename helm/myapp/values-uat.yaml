@@ -2,4 +2,4 @@ env: uat
 replicaCount: 1
 image:
   repository: 861027663622.dkr.ecr.ap-south-1.amazonaws.com/gitops-platform/uat/myapp
-  tag: latest
+  tag: 8288d6aa

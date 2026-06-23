@@ -2,4 +2,4 @@ env: dev
 replicaCount: 1
 image:
   repository: 861027663622.dkr.ecr.ap-south-1.amazonaws.com/gitops-platform/dev/myapp
-  tag: latest
+  tag: 8288d6aa
